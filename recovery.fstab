@@ -1,0 +1,31 @@
+# mount point	fstype		device
+/system		ext4		/dev/block/bootdevice/by-name/system
+/system_image	emmc		/dev/block/bootdevice/by-name/system		flags=display="System Image";backup=1;flashimg=1;
+/cache		ext4		/dev/block/bootdevice/by-name/cache
+/vendor		ext4		/dev/block/bootdevice/by-name/vendor
+/vendor_image	emmc		/dev/block/bootdevice/by-name/vendor		flags=display="Vendor Image";backup=1;flashimg=1;
+/data		ext4		/dev/block/bootdevice/by-name/userdata		flags=encryptable=footer
+/external_sd	vfat		/dev/block/mmcblk1p1				flags=storage;removable;
+/usb_otg	vfat		/dev/block/sda1	/dev/block/sda			flags=display="USB OTG";storage;removable;
+/boot		emmc		/dev/block/bootdevice/by-name/boot
+/recovery	emmc		/dev/block/bootdevice/by-name/recovery
+/misc		emmc		/dev/block/bootdevice/by-name/misc		flags=display="misc";backup=1;flashimg=1;
+/sbl1		emmc		/dev/block/bootdevice/by-name/sbl1		flags=display="sbl1";backup=1;flashimg=1;
+/aboot		emmc		/dev/block/bootdevice/by-name/aboot		flags=display="aboot";backup=1;flashimg=1;
+/rpm		emmc		/dev/block/bootdevice/by-name/rpm		flags=display="rpm";backup=1;flashimg=1;
+/tz		emmc		/dev/block/bootdevice/by-name/tz		flags=display="tz";backup=1;flashimg=1;
+/modem		vfat		/dev/block/bootdevice/by-name/modem
+/modem_image	emmc		/dev/block/bootdevice/by-name/modem		flags=display="Modem Image";backup=1;flashimg=1;
+/persist	ext4		/dev/block/bootdevice/by-name/persist
+/persist_image	emmc		/dev/block/bootdevice/by-name/persist		flags=display="Persist Image";backup=1;flashimg=1;
+/hidden		ext4		/dev/block/bootdevice/by-name/hidden
+/hidden_image	emmc		/dev/block/bootdevice/by-name/hidden		flags=display="Hidden Image";backup=1;flashimg=1;
+/cda		ext4		/dev/block/bootdevice/by-name/cda
+/cda_image	emmc		/dev/block/bootdevice/by-name/cda		flags=display="CDA Image";backup=1;flashimg=1;
+/systeminfo	emmc		/dev/block/bootdevice/by-name/systeminfo	flags=display="systeminfo";backup=1;flashimg=1;
+/sutinfo	emmc		/dev/block/bootdevice/by-name/sutinfo		flags=display="sutinfo";backup=1;flashimg=1;
+/hwcfg		emmc		/dev/block/bootdevice/by-name/hwcfg		flags=display="hwcfg";backup=1;flashimg=1;
+/splash		emmc		/dev/block/bootdevice/by-name/splash		flags=display="splash";backup=1;flashimg=1;
+/multi_splash	emmc		/dev/block/bootdevice/by-name/multi_splash	flags=display="multi_splash";backup=1;flashimg=1;
+/ftm		emmc		/dev/block/bootdevice/by-name/ftm		flags=display="ftm";backup=1;flashimg=1;
+/cust_nv	emmc		/dev/block/bootdevice/by-name/cust_nv		flags=display="cust_nv";backup=1;flashimg=1;
